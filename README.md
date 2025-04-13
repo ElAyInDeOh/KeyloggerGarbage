@@ -14,6 +14,41 @@ Special Key Injection – Sends occasional special keys (like arrow or function 
 
 Variable Timing – Adds randomness to input timing to avoid predictable patterns
 
+🛡️ Threats KeyloggerGarbage Helps Against
+These are the most common types of keyloggers and scenarios where your tool can actually make a difference:
+
+✅ Effectively Obfuscated By KeyloggerGarbage
+Global hook-based keyloggers
+(using SetWindowsHookEx to capture keystrokes)
+
+Polling-based keyloggers
+(using GetAsyncKeyState() or similar to check key states repeatedly)
+
+Basic hardware keyloggers
+(USB/PS2 inline devices that log raw input without analysis)
+
+Amateur keyloggers from GitHub or pastebin-type sources
+(quick DIY keylogger scripts)
+
+Phishing payloads
+(keyloggers bundled in fake game cracks, cheat engines, keygens, etc.)
+
+Freeware spy tools
+(simple "monitoring" programs disguised as productivity tools)
+
+Parental control/snooping apps
+(used to track kids, spouses, or roommates)
+
+Employee monitoring software
+(basic surveillance tools some companies use to track keystrokes)
+
+Less sophisticated RATs
+(Remote Access Trojans that include keylogging but use common techniques)
+
+Malware with low-level obfuscation
+(mass-distributed malware that adds a keylogger as one of its functions)
+
+
 ⚙️ System Requirements
 Windows 7, 8, 10, or 11
 
