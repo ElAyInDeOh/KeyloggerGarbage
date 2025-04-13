@@ -1,0 +1,13 @@
+C:\Users\G4645\source\repos\KeyloggerGarbage\KeyloggerGarbage\bin\Release\KeyloggerGarbage.exe.config
+C:\Users\G4645\source\repos\KeyloggerGarbage\KeyloggerGarbage\bin\Release\KeyloggerGarbage.exe
+C:\Users\G4645\source\repos\KeyloggerGarbage\KeyloggerGarbage\bin\Release\KeyloggerGarbage.pdb
+C:\Users\G4645\source\repos\KeyloggerGarbage\KeyloggerGarbage\obj\Release\KeyloggerDefender.Form1.resources
+C:\Users\G4645\source\repos\KeyloggerGarbage\KeyloggerGarbage\obj\Release\KeyloggerGarbage.Properties.Resources.resources
+C:\Users\G4645\source\repos\KeyloggerGarbage\KeyloggerGarbage\obj\Release\KeyloggerGarbage.csproj.GenerateResource.cache
+C:\Users\G4645\source\repos\KeyloggerGarbage\KeyloggerGarbage\obj\Release\KeyloggerGarbage.csproj.CoreCompileInputs.cache
+C:\Users\G4645\source\repos\KeyloggerGarbage\KeyloggerGarbage\obj\Release\KeyloggerGarbage.exe
+C:\Users\G4645\source\repos\KeyloggerGarbage\KeyloggerGarbage\obj\Release\KeyloggerGarbage.pdb
+C:\Users\G4645\source\repos\KeyloggerGarbage\KeyloggerGarbage\bin\Release\KeyloggerGarbage.exe.manifest
+C:\Users\G4645\source\repos\KeyloggerGarbage\KeyloggerGarbage\bin\Release\KeyloggerGarbage.application
+C:\Users\G4645\source\repos\KeyloggerGarbage\KeyloggerGarbage\obj\Release\KeyloggerGarbage.exe.manifest
+C:\Users\G4645\source\repos\KeyloggerGarbage\KeyloggerGarbage\obj\Release\KeyloggerGarbage.application
