@@ -113,5 +113,17 @@ MIT License – use freely. No data is collected, stored, or transmitted.
 All logs remain entirely local.
 
 ---
+If you'd like to support my work, feel free to donate Bitcoin:
+---
+Bitcoin Address:
+---
+
+bc1qxu67tqhzzwfn6dyr7z2gq5d4wdexz7sa7d2pxe
+---
+Bitcoin QR Code
+---
+
+![BitcoinQRCode](https://github.com/user-attachments/assets/18df8d50-ab93-4922-ad47-5a9a1b890793)
+
 
 *Need more help? Reach out via GitHub Issues for support.*
