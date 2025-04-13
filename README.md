@@ -1,116 +1,117 @@
-🛡️ KeyloggerGarbage
+# 🛡️ KeyloggerGarbage
 
-KeyloggerGarbage is a lightweight, experimental tool designed to obscure keyboard input from basic keyloggers by injecting misleading keystrokes into the input stream. It is not a complete security solution, but rather a focused obfuscation utility meant for use in specific situations.
+**KeyloggerGarbage** is a lightweight, experimental utility that helps obscure real keyboard input from basic keyloggers by injecting fake keystrokes into the input stream. It is *not* a full security solution — just an obfuscation tool for specific situations.
 
-![KeyloggerGarbageScreenshot](https://github.com/user-attachments/assets/f1a18038-c211-4a42-a93e-189f3749ac63)
+![KeyloggerGarbageScreenshot](https://github.com/user-attachments/assets/4f322496-2ddc-421f-903b-0f0836e99381)
 
 
-🔍 Overview
+---
 
-KeyloggerGarbage attempts to confuse common keylogging tools by using several layered techniques:
+## 🔍 Overview
 
-Garbage Keystroke Injection – Sends random fake keystrokes that appear to keyloggers but don’t affect actual input.
+KeyloggerGarbage attempts to confuse basic keylogging tools through:
 
-Shadow Typing – Inputs characters that resemble what you're typing to further distort logs.
+- **Garbage Keystroke Injection** – Random fake keystrokes that show up in keyloggers but don’t affect actual input  
+- **Shadow Typing** – Characters that resemble real input are occasionally injected  
+- **Special Key Injection** – Sends random arrow keys, function keys, etc.  
+- **Variable Timing** – Random delays prevent predictable input patterns  
 
-Special Key Injection – Occasionally sends non-character keys (like arrow or function keys) to break up patterns.
+---
 
-Variable Timing – Adds randomized delays between injections to avoid predictable input behavior.
+## 🛡️ Threats It Helps Obfuscate
 
-🛡️ Threat Coverage
+These are common types of keyloggers and scenarios where KeyloggerGarbage can help:
 
-These are the most common types of keyloggers and surveillance scenarios where KeyloggerGarbage can help:
+✅ **Effectively Obfuscated:**
 
-✅ Effectively Obfuscates:
+- Global hook-based keyloggers (`SetWindowsHookEx`)
+- Polling-based keyloggers (`GetAsyncKeyState`, `GetKeyState`, etc.)
+- Basic USB/PS2 hardware keyloggers (without timing analysis)
+- Amateur keyloggers from GitHub, Pastebin, forums
+- Phishing payloads in game cracks, cheat tools, or keygens
+- Freeware spy tools disguised as “monitoring” software
+- Parental control or snooping apps
+- Basic employee surveillance tools
+- Lightweight RATs using basic logging methods
+- Commodity malware with crude keyloggers
 
-Global hook-based keyloggers (SetWindowsHookEx)
+⚠️ **Limited or No Effectiveness:**
 
-Polling-based keyloggers (GetAsyncKeyState, etc.)
+- Advanced malware with timing analysis or multi-method capture
+- Screen capture malware
+- Form grabbers
+- Memory-reading tools
+- Sophisticated keyloggers using AI-based filtering or low-level drivers
 
-Basic hardware keyloggers (USB/PS2 inline devices without timing analysis)
+---
 
-Amateur scripts from GitHub or Pastebin
+## ⚙️ System Requirements
 
-Phishing payload keyloggers (bundled with cracks, cheats, keygens)
+- Windows 7, 8, 10, or 11  
+- .NET Framework 4.7.1 or higher  
+- Administrator privileges (for keyboard hook access)  
 
-Freeware spy tools disguised as productivity apps
+---
 
-Parental control/snooping tools
+## 🚀 Getting Started
 
-Basic employee monitoring software
+1. Download the latest release from the [Releases](https://github.com/yourusername/KeyloggerGarbage/releases) page  
+2. Extract all files  
+3. Right-click `KeyloggerGarbage.exe` → **Run as Administrator**
 
-Less sophisticated Remote Access Trojans (RATs)
+---
 
-Malware using low-level, non-AI-based keystroke logging
+## 💡 Usage
 
-⚙️ System Requirements
+- Click **"Enable Protection"** to begin injecting obfuscation
+- Use the **protection level slider** to adjust injection frequency  
+  - **Low =** Better performance, minimal protection  
+  - **High =** More protection, potentially noticeable lag
+- View real and fake input in the **Live Input** panel
+- Use the **Activity Log** to review injection events  
+- Click **Export Log** to save data for manual review
 
-Windows 7 / 8 / 10 / 11
+---
 
-.NET Framework 4.7.1 or higher
+## 🧪 Effectiveness Summary
 
-Administrator privileges (required for low-level keyboard hooks)
+| Threat Type                     | Protection |
+|--------------------------------|------------|
+| Hook-based keyloggers          | ✅ Effective |
+| Polling-based keyloggers       | ✅ Effective |
+| Hardware loggers (no timing)   | ✅ Effective |
+| Advanced malware, AI detection | ❌ Ineffective |
+| Screen capture, form grabbers  | ❌ Ineffective |
 
-🚀 Getting Started
+---
 
-Download the ZIP from the Releases page
+## ⚠️ Limitations
 
-Extract all files to a folder of your choice
+- **Does not detect keyloggers**
+- **Does not prevent malware**
+- **Cannot protect against screen capture or memory scraping**
+- Some software (especially games) may not behave well with protection enabled
+- Higher protection settings may cause slight performance impact
 
-Right-click KeyloggerGarbage.exe and choose "Run as Administrator"
+> 🧠 Use this tool *only* when entering sensitive data, and always alongside trusted security software
 
-💡 How to Use
+---
 
-Click "Enable Protection" to begin obfuscating your keyboard input
+## 🛠️ Troubleshooting
 
-Adjust the Protection Level slider to control injection frequency
+| Problem                        | Solution                                       |
+|-------------------------------|------------------------------------------------|
+| App won’t launch              | Run as Administrator, check .NET version      |
+| Typing feels weird/buggy      | Lower the protection level                    |
+| App causes slowdown           | Disable protection when not entering sensitive info |
 
-Lower = better performance, less protection
+---
 
-Higher = more protection, possible input delay
+## 📜 License
 
-The Live Input window shows a real-time mix of real and fake keystrokes
+MIT License – use freely. No data is collected, stored, or transmitted.  
+All logs remain entirely local.
 
-Use Export Log to save activity data for analysis
+---
 
-🧪 Effectiveness
-
-🟢 Effective Against:
-Basic software keyloggers using Windows APIs
-
-Simple hardware loggers without timing intelligence
-
-🟡 Limited Protection Against:
-Advanced malware using timing analysis, AI, or multi-capture strategies
-
-🔴 Not Effective Against:
-Screen capture malware
-
-Form grabbers (data interception after input is processed)
-
-Memory-reading malware
-
-Sophisticated keyloggers with pattern recognition or heuristics
-
-⚠️ Limitations & Warnings
-
-❌ Does not detect or remove keyloggers
-
-❌ Does not protect against screen recording or clipboard sniffers
-
-❌ Should not replace trusted security software
-
-⚠️ May cause lag or interfere with certain applications (e.g., games or software with custom keyboard input)
-
-Use only when needed — and always in combination with good security habits.
-
-🛠️ Troubleshooting
-
-Problem	Solution
-App won't launch	Run as Administrator and ensure .NET Framework is installed
-Input feels buggy or delayed	Lower the protection level slider
-Performance issues or slowdowns	Disable protection when not typing sensitive information
-📜 License
-MIT License — Free to use, modify, and distribute.
-Privacy Note: KeyloggerGarbage collects no user data. All activity logs are stored locally and never transmitted.
-
+*Need more help? Reach out via GitHub Issues for support.*
