@@ -6,6 +6,7 @@ KeyloggerGarbage is a lightweight, experimental tool designed to obscure keyboar
 
 
 🔍 Overview
+
 KeyloggerGarbage attempts to confuse common keylogging tools by using several layered techniques:
 
 Garbage Keystroke Injection – Sends random fake keystrokes that appear to keyloggers but don’t affect actual input.
@@ -17,9 +18,11 @@ Special Key Injection – Occasionally sends non-character keys (like arrow or f
 Variable Timing – Adds randomized delays between injections to avoid predictable input behavior.
 
 🛡️ Threat Coverage
+
 These are the most common types of keyloggers and surveillance scenarios where KeyloggerGarbage can help:
 
 ✅ Effectively Obfuscates:
+
 Global hook-based keyloggers (SetWindowsHookEx)
 
 Polling-based keyloggers (GetAsyncKeyState, etc.)
@@ -41,6 +44,7 @@ Less sophisticated Remote Access Trojans (RATs)
 Malware using low-level, non-AI-based keystroke logging
 
 ⚙️ System Requirements
+
 Windows 7 / 8 / 10 / 11
 
 .NET Framework 4.7.1 or higher
@@ -48,6 +52,7 @@ Windows 7 / 8 / 10 / 11
 Administrator privileges (required for low-level keyboard hooks)
 
 🚀 Getting Started
+
 Download the ZIP from the Releases page
 
 Extract all files to a folder of your choice
@@ -55,6 +60,7 @@ Extract all files to a folder of your choice
 Right-click KeyloggerGarbage.exe and choose "Run as Administrator"
 
 💡 How to Use
+
 Click "Enable Protection" to begin obfuscating your keyboard input
 
 Adjust the Protection Level slider to control injection frequency
@@ -68,6 +74,7 @@ The Live Input window shows a real-time mix of real and fake keystrokes
 Use Export Log to save activity data for analysis
 
 🧪 Effectiveness
+
 🟢 Effective Against:
 Basic software keyloggers using Windows APIs
 
@@ -86,6 +93,7 @@ Memory-reading malware
 Sophisticated keyloggers with pattern recognition or heuristics
 
 ⚠️ Limitations & Warnings
+
 ❌ Does not detect or remove keyloggers
 
 ❌ Does not protect against screen recording or clipboard sniffers
@@ -97,6 +105,7 @@ Sophisticated keyloggers with pattern recognition or heuristics
 Use only when needed — and always in combination with good security habits.
 
 🛠️ Troubleshooting
+
 Problem	Solution
 App won't launch	Run as Administrator and ensure .NET Framework is installed
 Input feels buggy or delayed	Lower the protection level slider
